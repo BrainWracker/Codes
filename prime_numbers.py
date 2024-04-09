@@ -10,7 +10,7 @@ def findPrimes(num):
 
     for n in range(3, num, 2):
         isPrime = True
-        for i in range(3, int(num**0.5)+1, 2):
+        for i in range(3, int(n**0.5)+1, 2):
             if n % i == 0:
                 isPrime = False
                 break
@@ -42,7 +42,7 @@ def sieve(num):
 
 if __name__ == '__main__':
     
-    N = 10000
+    N = 100
 
     start_time = time.time()
     primes = findPrimes(N)
